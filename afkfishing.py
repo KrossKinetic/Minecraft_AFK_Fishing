@@ -9,7 +9,6 @@ def on_press(key):
     try:
         if key == keyboard.Key.alt_l:
             y = pyautogui.pixel(1722,841)
-            #print(y)
             print("Fishing Rod found. Starting to fish.")
             while True:
                 x = pyautogui.pixelMatchesColor(1722, 841, y,tolerance=40)

@@ -12,10 +12,8 @@ def on_press(key):
             #print(y)
             print("Fishing Rod found. Starting to fish.")
             while True:
-                #print("color got: " + str(y)w da )
                 x = pyautogui.pixelMatchesColor(1722, 841, y,tolerance=40)
                 if x == True:
-                    #y = pyautogui.pixel(1722,841) 
                     mouse.click(Button.right)
                     time.sleep(2)
     except AttributeError:
